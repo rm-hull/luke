@@ -11,8 +11,6 @@ public class KeepLastIndexDeletionPolicy extends IndexDeletionPolicy {
    * Deletes all commits except the most recent one.
    */
   public void onInit(List commits) {
-    //System.out.println("onInit -> onCommit");
-    // Note that commits.size() should normally be 1:
     onCommit(commits);
   }
 
